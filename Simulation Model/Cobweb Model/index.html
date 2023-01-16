@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobweb Model</title>
+    <style>
+        #initial_price_label,input,button{
+            font-size: 1.5rem;
+            margin: 0.25rem;
+        }
+
+       #chart-container {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "input-container">
+        <label for="initial_price" id="initial_price_label">Initial Price (Po):</label><br>
+        <input type="text" id="initial_price">
+        <br>
+       <button id="btn">Submit</button>
+    </div>
+    <div id="chart-container">
+        <canvas id="cobweb"></canvas>
+      </div>      
+</body>
+<script src="../Chart js/chart.js"></script>
+<script src="script.js"></script>
+</html>

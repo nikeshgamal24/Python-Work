@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributed Lag Model</title>
+    <style>
+        #label-name,input,button{
+            font-size: 1.5rem;
+            margin: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div id = "input-container">
+        <label for="time_period" id="label-name">Time Stamp [5,6,7]:</label><br>
+        <input type="text" id="time_stamp">
+        <br>
+       <button id="btn">Submit</button>
+    </div>
+    <div>
+        <canvas id="myChart" width="1000" height="800"></canvas>
+      </div>
+</body>
+<script src="../Chart js/chart.js"></script>
+<script  src="script.js"></script>
+</html>
