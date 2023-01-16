@@ -2,7 +2,7 @@
 
 def reverse_string(local_string: str)-> str:
     result_string = ''
-    for ind in range(len(local_string)-1,-1,-1):
+    for ind in range(len(local_string)-,-1,-1):
     
         # print(f'index: {ind} value: {local_string[ind]}')
         # print(f'old-result: {result_string}')
