@@ -6,28 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cobweb Model</title>
     <style>
-        #initial_price_label,input,button{
+        label,input,button{
             font-size: 1.5rem;
             margin: 0.25rem;
         }
 
        #chart-container {
-            width: 500px;
-            height: 500px;
+            width: 100%;
+            height: 50%;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+        canvas{
+            /* margin: 0 auto; */
+            /* border: 1px solid hotpink; */
+            justify-content: space-around;
+        }
+        #input-container{
+            display: flex;
+            justify-content: flex-start;
         }
     </style>
 </head>
 <body>
     <div id = "input-container">
-        <label for="initial_price" id="initial_price_label">Initial Price (Po):</label><br>
-        <input type="text" id="initial_price">
-        <br>
-       <button id="btn">Submit</button>
-    </div>
+        <div>
+            <!-- Section for stable market datas -->
+            <label>Data for stable market:</label><br>
+            <label for="initial_price" id="initial_price_label">Initial Price (Po):</label><br>
+            <input type="text" id="initial_price">
+            <br>
+            <label for="section_a" id="section_a_label">a :</label><br>
+            <input type="text" id="section_a">
+            <br>
+            <label for="section_b" id="section_a_label">b :</label><br>
+            <input type="text" id="section_b">
+            <br>
+            <label for="section_c" id="section_c_label">c :</label><br>
+            <input type="text" id="section_c">
+            <br>
+            <label for="section_d" id="section_d_label">d :</label><br>
+            <input type="text" id="section_d">
+            <br>
+            <button id="btn">Submit</button>
+        </div>
+        <div>
+            <!-- Section for unstable market datas -->
+            <label>Data for Unstable market:</label><br>
+            <label for="uinitial_price" id="uinitial_price_label">Initial Price (Po):</label><br>
+            <input type="text" id="uinitial_price">
+            <br>
+            <label for="usection_a" id="usection_a_label">a :</label><br>
+            <input type="text" id="usection_a">
+            <br>
+            <label for="usection_b" id="suection_a_label">b :</label><br>
+            <input type="text" id="usection_b">
+            <br>
+            <label for="usection_c" id="usection_c_label">c :</label><br>
+            <input type="text" id="usection_c">
+            <br>
+            <label for="usection_d" id="usection_d_label">d :</label><br>
+            <input type="text" id="usection_d">
+            <br>
+            <!-- <button id="unstable-data-btn">Submit</button> -->
+         </div> 
+     </div>
     <div id="chart-container">
-        <canvas id="cobweb"></canvas>
+        <canvas id="cobweb-stable" width="1000" height="800"></canvas>
+        <canvas id="cobweb-unstable" width="1000" height="800"></canvas>
       </div>      
 </body>
-<script src="../Chart js/chart.js"></script>
+<script src="chart.js"></script>
 <script src="script.js"></script>
 </html>
